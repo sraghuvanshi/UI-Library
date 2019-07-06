@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>UI Library</title>
+    <style>
+      body {
+        font-size: 1.5em;
+      }
+      .container {
+        margin: 40px;
+        margin-top: 60px;
+      }
+      button {
+        width: 200px;
+        background: #eee;
+        padding: 10px;
+        margin: 20px auto;
+        border: none;
+        border-radius: 4px;
+        font-size: 1em;
+        cursor: pointer;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Tooltip -->
+    <div class="container">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+        accusantium quis ad,
+        <span class="tooltip1 tooltip" data-message="I'm a Tooltip!"
+          >ducimus explicabo</span
+        >, labore,
+        <span class="tooltip2 tooltip" data-message="Tooltip!!"
+          >odit tenetur</span
+        >
+        rem ipsam quaerat veniam vitae! Tempora, nisi aut culpa rerum asperiores
+        optio veritatis!
+      </p>
+
+      <h2>Services</h2>
+      <!-- Dropdowns -->
+      <div class="dropdown">
+        <div class="trigger">Awesome T-shirt Designs</div>
+        <div class="content">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+            quibusdam minus error omnis, harum incidunt. Magni ea fugiat
+            exercitationem, veniam necessitatibus perferendis, odio consectetur
+            odit aperiam alias explicabo ipsam beatae!
+          </p>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <div class="trigger">Cool Sticker Printing</div>
+        <div class="content">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+            quibusdam minus error omnis, harum incidunt. Magni ea fugiat
+            exercitationem, veniam necessitatibus perferendis, odio consectetur
+            odit aperiam alias explicabo ipsam beatae!
+          </p>
+        </div>
+      </div>
+
+      <h2>More Information</h2>
+      <!-- tabs -->
+      <div class="tabs">
+        <ul>
+          <li class="trigger active" data-target="#about">About</li>
+          <li class="trigger" data-target="#delivery">Delivery Info</li>
+          <li class="trigger" data-target="#returns">Returns Info</li>
+        </ul>
+        <div id="about" class="content active">
+          <h3>About</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+            ducimus suscipit porro ut molestiae enim autem nobis sunt doloribus
+            nam pariatur aut quam quae labore aliquam, est, accusamus iusto
+            quod! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Cupiditate rerum sunt laboriosam, laudantium aperiam aspernatur fuga
+            reprehenderit quaerat tempora nesciunt iure quidem voluptas dolorum
+            sed adipisci provident non quisquam doloribus. Lorem ipsum dolor sit
+            amet consectetur, adipisicing elit. Officia ea, facere facilis quia
+            ducimus corporis error ullam, cumque maxime at dolorem! Ab in nulla
+            voluptas earum esse atque neque quos?
+          </p>
+        </div>
+        <div id="delivery" class="content">
+          <h3>Delivery</h3>
+          <p>
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+            sed quia non numquam eius modi tempora incidunt ut labore et dolore
+            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+            aliquid ex ea commodi consequatur?
+          </p>
+        </div>
+        <div id="returns" class="content">
+          <h3>Returns</h3>
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium voluptatum deleniti atque corrupti quos
+            dolores et quas molestias excepturi sint occaecati cupiditate non
+            provident, similique sunt in culpa qui officia deserunt mollitia
+            animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis
+            est et expedita distinctio. Nam libero tempore, cum soluta nobis est
+            eligendi optio cumque nihil impedit quo minus id quod maxime placeat
+            facere possimus, omnis voluptas assumenda est, omnis dolor
+            repellendus. Temporibus autem quibusdam et aut officiis debitis aut
+            rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint
+            et molestiae non recusandae.
+          </p>
+        </div>
+      </div>
+      <div>
+        <button class="snackbar-trigger">click me</button>
+      </div>
+    </div>
+
+    <script src="assets/bundle.js"></script>
+  </body>
+</html>
